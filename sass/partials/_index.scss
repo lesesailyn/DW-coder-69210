@@ -1,0 +1,69 @@
+@use "./variables" as*;
+
+/* Grid */
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas: 
+    "img1 img1 texto1"
+    "texto2 img2 img2"
+    "img3 img3 texto3"
+    "texto4 img4 img4";
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: 400px 500px 450px 450px;
+    row-gap: 30px;
+    column-gap: 8px;
+    img {
+    box-shadow: 2px 2px 20px 0 #bd7ddb;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    }
+}
+.grid-texto-1 {
+    grid-area: texto1;
+}
+.grid-img-1 {
+    grid-area: img1;
+}
+.grid-texto-2 {
+    grid-area: texto2;
+}
+.grid-img-2 {
+    grid-area: img2;
+}
+.grid-texto-3 {
+    grid-area: texto3;
+}
+.grid-img-3 {
+    grid-area: img3;
+}
+.grid-texto-4 {
+    grid-area: texto4;
+}
+.grid-img-4 {
+    grid-area: img4;
+}
+.bloque-contenedor-grid {
+    padding: 30px;
+    margin: 20px 15px;
+    border-radius: 10px;
+    background-color: #E6E6FA;
+}
+.grid-texto-1, .grid-texto-2, .grid-texto-3, .grid-texto-4 {
+    font-family:'Caveat', cursive;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1.3px;
+    background-color: #F1E6FF;
+    border: 2px solid #F2C6D9;
+    padding: 20px;
+    border-radius: 10px;
+    color: #3B3B58;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

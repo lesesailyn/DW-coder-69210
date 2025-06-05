@@ -1,0 +1,79 @@
+@use "./variables" as*;
+
+/* Contacto */
+
+.contacto-titulo {
+    margin: 20px 20px 30px 20px;
+}
+.formulario {
+    background-color: #f3e7f8;
+    font-weight: 600;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0px;
+    width: 100%;
+}
+.grupo-input {
+    display: flex;
+    gap: 5px;
+    width: 100%;
+}
+.grupo-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.checkbox {
+    display: inline-flex;
+    gap: 15px;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+}
+textarea, input {
+    padding-left: 6px;
+    &:focus {
+    background-color: rgb(252, 225, 246);
+    border: 4px solid rgb(190, 106, 197);
+}
+}
+.mensaje {
+    display: flex;
+    gap: 10px;
+}
+.boton-enviar {
+    background-color: #cbbdd1;
+    color: $violeta;
+    font-weight: bold;
+    padding: 15px 100px;
+    border-radius: 10px;
+    border: none;
+    &:hover {
+    background-color: $violeta;
+    color: #cbbdd1;
+    }
+}
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+}
+#carouselExampleAutoplaying {
+    width: 50%;
+    margin: 30px auto;
+}

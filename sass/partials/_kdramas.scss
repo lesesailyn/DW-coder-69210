@@ -1,0 +1,90 @@
+@use "./variables" as*;
+
+.kdramas-titulo {
+    margin: 20px 20px 30px 20px;
+}
+.categorias h3 {
+    text-decoration-line: underline;
+    text-decoration-color: $lila;
+    font-weight: bold;
+    color: $violeta;
+}
+/* Acordeón  */
+
+.accordion-item {
+    border: 1px solid #9b7fa9;
+    h4 {
+        font-size: 20px;
+    }
+}
+.accordion-button {
+    background-color: #d0bcd8;
+    font-weight: 600;
+    &:not(.collapsed) {
+    background-color: #d5b1e4;
+}
+}
+.categorias {
+    background-color: #ece9f8 ;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+    color: rgb(42, 42, 51);
+    font-size: 15px;
+    ul {
+        padding-left: 20px;
+    }
+    h3 {
+        padding-bottom: 10px;
+    }
+}
+.top {
+    color: rgb(42, 42, 51);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 50px;
+    h3 {
+    text-align: center;
+    padding: 30px;
+    color: $violeta;
+    }
+    p {
+    color: rgb(42, 42, 51);
+    font-size: 15px;
+    font-weight: normal;
+    }
+    img {
+    border-radius: 8px;
+    } 
+}
+.top-contenedor {
+    box-shadow: 1px 1px 10px 2px #cae0f8;
+    background-color: #ece9f8;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.top-dramas {
+    margin: 0 auto;
+    li {
+    list-style-type: none;
+    margin-right: 30px;
+    }
+    h4 {
+    padding: 20px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 2px rgba(212, 165, 228, 0.6);
+    font-weight: bold;
+    }
+    p {
+    padding: 20px;
+    }
+}
+.parrafo {
+    margin: 30px 10px;
+    line-height: 30px; 
+    max-width: 95%;
+}

@@ -1,0 +1,12 @@
+$violeta: #693382; // letras y títulos
+$lila: #BEAEE2; // fondos o decoración
+$celeste: #ebeef3; // fondos
+$rosa: #d394cd; // hover, fondo o decoración
+$font: 'Montserrat', sans-serif;
+
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
