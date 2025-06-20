@@ -10,20 +10,39 @@ body {
   background-color: rgba(255, 240, 248, 0.6980392157);
   font-family: "Montserrat", sans-serif;
 }
-
-h1 {
+body h1 {
   color: #693382;
   letter-spacing: 2px;
   text-align: center;
   font-weight: bolder;
   font-size: 40px;
 }
-
-.tracking-in-expand {
-  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
+body .tracking-in-expand {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s both;
 }
-
+body h2 {
+  color: #693382;
+  text-decoration-line: underline;
+  text-decoration-color: #F9F4FF;
+}
+body h3 {
+  color: black;
+}
+body p {
+  color: rgb(42, 42, 51);
+  line-height: 25px;
+  padding: 10px;
+}
+body a {
+  text-decoration: none;
+  color: #BEAEE2;
+}
+body ul li {
+  line-height: 25px;
+}
+body ul img {
+  width: 250px;
+}
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -36,32 +55,16 @@ h1 {
     opacity: 1;
   }
 }
-h2 {
-  color: #693382;
-  text-decoration-line: underline;
-  text-decoration-color: #F9F4FF;
-}
-
-h3 {
-  color: black;
-}
-
-p {
-  color: rgb(42, 42, 51);
-  line-height: 25px;
-  padding: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: #BEAEE2;
-}
-
-ul li {
-  line-height: 25px;
-}
-ul img {
-  width: 250px;
+body .portada {
+  background-image: url(../images/portada.jpg);
+  text-shadow: 4px 4px 2px rgba(247, 219, 240, 0.6);
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+  font-weight: bolder;
+  padding: 100px 0px;
+  margin-top: 20px;
 }
 
 /* Header & Footer */
@@ -76,39 +79,24 @@ header img {
   width: 70px;
   margin: 5px 20px;
 }
-
-nav a {
+header nav a {
   text-decoration: none;
   color: #693382;
   text-transform: uppercase;
   font-weight: bold;
 }
-nav a:hover {
+header nav a:hover {
   color: #d394cd;
   text-decoration: underline;
 }
-
-.nav-item {
+header .nav-item {
   list-style: none;
   padding: 5px 0px;
 }
-
-.navbar-toggler {
+header .navbar-toggler {
   background-color: #BEAEE2;
   padding: 10px 20px;
   margin-right: 20px;
-}
-
-.portada {
-  background-image: url(../images/portada.jpg);
-  text-shadow: 4px 4px 2px rgba(247, 219, 240, 0.6);
-  height: 300px;
-  background-size: contain;
-  background-position: center;
-  text-align: center;
-  font-weight: bolder;
-  padding: 100px 0px;
-  margin-top: 20px;
 }
 
 /* ----------------------- footer--------------------------- */
@@ -121,81 +109,69 @@ nav a:hover {
 .footer img {
   width: 50px;
 }
-
 .footer p {
   color: #693382;
   font-weight: bold;
   font-size: 20px;
 }
-
-.footer-iconos {
+.footer .footer-iconos {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-
-.footer-copy p {
+.footer .footer-copy p {
   font-size: 18px;
   font-weight: 500;
   margin-top: 30px;
 }
 
 /* Grid */
-.contenedor-grid {
-  display: grid;
-  grid-template-areas: "img1 img1 texto1" "texto2 img2 img2" "img3 img3 texto3" "texto4 img4 img4";
-  grid-template-columns: 30% 30% 40%;
-  grid-template-rows: 400px 500px 450px 450px;
-  row-gap: 30px;
-  column-gap: 8px;
-}
-.contenedor-grid img {
-  box-shadow: 2px 2px 20px 0 #bd7ddb;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.grid-texto-1 {
-  grid-area: texto1;
-}
-
-.grid-img-1 {
-  grid-area: img1;
-}
-
-.grid-texto-2 {
-  grid-area: texto2;
-}
-
-.grid-img-2 {
-  grid-area: img2;
-}
-
-.grid-texto-3 {
-  grid-area: texto3;
-}
-
-.grid-img-3 {
-  grid-area: img3;
-}
-
-.grid-texto-4 {
-  grid-area: texto4;
-}
-
-.grid-img-4 {
-  grid-area: img4;
-}
-
 .bloque-contenedor-grid {
   padding: 30px;
   margin: 20px 15px;
   border-radius: 10px;
   background-color: #E6E6FA;
 }
-
-.grid-texto-1, .grid-texto-2, .grid-texto-3, .grid-texto-4 {
+.bloque-contenedor-grid .contenedor-grid {
+  display: grid;
+  grid-template-areas: "img1 img1 texto1" "texto2 img2 img2" "img3 img3 texto3" "texto4 img4 img4";
+  grid-template-columns: 30% 30% 40%;
+  grid-template-rows: 400px 500px 450px 450px;
+  row-gap: 30px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.bloque-contenedor-grid .contenedor-grid img {
+  box-shadow: 2px 2px 20px 0 #bd7ddb;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-texto-1 {
+  grid-area: texto1;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-img-1 {
+  grid-area: img1;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-texto-2 {
+  grid-area: texto2;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-img-2 {
+  grid-area: img2;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-texto-3 {
+  grid-area: texto3;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-img-3 {
+  grid-area: img3;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-texto-4 {
+  grid-area: texto4;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-img-4 {
+  grid-area: img4;
+}
+.bloque-contenedor-grid .contenedor-grid .grid-texto-1, .bloque-contenedor-grid .contenedor-grid .grid-texto-2, .bloque-contenedor-grid .contenedor-grid .grid-texto-3, .bloque-contenedor-grid .contenedor-grid .grid-texto-4 {
   font-family: "Caveat", cursive;
   line-height: 50px;
   text-align: center;
@@ -215,13 +191,6 @@ nav a:hover {
 
 .kdramas-titulo {
   margin: 20px 20px 30px 20px;
-}
-
-.categorias h3 {
-  text-decoration-line: underline;
-  text-decoration-color: #BEAEE2;
-  font-weight: bold;
-  color: #693382;
 }
 
 /* Acordeón  */
@@ -253,6 +222,10 @@ nav a:hover {
 }
 .categorias h3 {
   padding-bottom: 10px;
+  text-decoration-line: underline;
+  text-decoration-color: #BEAEE2;
+  font-weight: bold;
+  color: #693382;
 }
 
 .top {
@@ -327,18 +300,17 @@ nav a:hover {
   gap: 30px;
   max-width: 100%;
 }
-
-.grid-videos {
+.bloque-ost .grid-videos {
   background-color: #f5e2fa;
   border: 2px solid #c6aad1;
   border-radius: 12px;
   padding: 15px;
   text-align: center;
 }
-.grid-videos h3 {
+.bloque-ost .grid-videos h3 {
   margin: 10px;
 }
-.grid-videos iframe {
+.bloque-ost .grid-videos iframe {
   box-shadow: 2px 1px 15px 2px #c6aad1;
   border-radius: 10px;
 }
@@ -358,15 +330,15 @@ nav a:hover {
   gap: 50px;
   padding: 50px 100px;
 }
-.lista-peliculas li {
+.lista-peliculas ul li {
   background-color: #f3e4f7;
   border-radius: 20px;
 }
-.lista-peliculas li p {
+.lista-peliculas ul li p {
   line-height: 28px;
   font-size: 14px;
 }
-.lista-peliculas li:hover {
+.lista-peliculas ul li:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(219, 89, 236, 0.356);
   transition: 0.3s;
@@ -374,7 +346,8 @@ nav a:hover {
 .lista-peliculas img {
   width: 100%;
   height: 300px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 20px;
 }
 
@@ -405,59 +378,50 @@ nav a:hover {
   border-radius: 10px;
   box-sizing: border-box;
 }
-
-form {
+.formulario form {
   display: flex;
   flex-direction: column;
   gap: 0px;
   width: 100%;
 }
-
-.input {
+.formulario .input {
   display: flex;
   flex-direction: column;
   gap: 5px;
   margin: 15px 0px;
   width: 100%;
 }
-
-.grupo-input {
+.formulario .grupo-input {
   display: flex;
   gap: 5px;
   width: 100%;
 }
-
-.grupo-checkbox {
+.formulario .grupo-checkbox {
   display: flex;
   flex-direction: column;
   gap: 12px;
   margin-bottom: 20px;
 }
-
-.checkbox {
+.formulario .checkbox {
   display: inline-flex;
   gap: 15px;
 }
-
-textarea {
+.formulario textarea {
   width: 100%;
   height: 100px;
 }
-
-textarea, input {
+.formulario textarea, .formulario input {
   padding-left: 6px;
 }
-textarea:focus, input:focus {
+.formulario textarea:focus, .formulario input:focus {
   background-color: rgb(252, 225, 246);
   border: 4px solid rgb(190, 106, 197);
 }
-
-.mensaje {
+.formulario .mensaje {
   display: flex;
   gap: 10px;
 }
-
-.boton-enviar {
+.formulario .boton-enviar {
   background-color: #cbbdd1;
   color: #693382;
   font-weight: bold;
@@ -465,12 +429,11 @@ textarea:focus, input:focus {
   border-radius: 10px;
   border: none;
 }
-.boton-enviar:hover {
+.formulario .boton-enviar:hover {
   background-color: #693382;
   color: #cbbdd1;
 }
-
-.boton-contenedor {
+.formulario .boton-contenedor {
   display: flex;
   justify-content: center;
 }
@@ -480,7 +443,7 @@ textarea:focus, input:focus {
   margin: 30px auto;
 }
 
-/* mediaQ */
+/* mediaQ celulares */
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -494,17 +457,21 @@ textarea:focus, input:focus {
   nav {
     width: 100%;
   }
-  .contenedor-grid {
+  .bloque-contenedor-grid .contenedor-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 150px;
     grid-template-areas: "img1" "texto1" "img2" "texto2" "img3" "texto3" "img4" "texto4";
   }
-  .grid-texto-1, .grid-texto-2, .grid-texto-3, .grid-texto-4 {
+  .bloque-contenedor-grid .contenedor-grid .grid-texto-1, .bloque-contenedor-grid .contenedor-grid .grid-texto-2, .bloque-contenedor-grid .contenedor-grid .grid-texto-3, .bloque-contenedor-grid .contenedor-grid .grid-texto-4 {
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 28px;
   }
-  .parrafo, .parrafo p {
+  .parrafo {
+    line-height: 38px;
+    font-size: 16px;
+  }
+  .parrafo p {
     line-height: 38px;
     font-size: 16px;
   }
@@ -569,5 +536,114 @@ textarea:focus, input:focus {
     width: 90%;
   }
 }
-
-/*# sourceMappingURL=estilos.css.map */
+/* mediaQ tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  header img {
+    width: 50px;
+  }
+  nav {
+    width: 100%;
+  }
+  .bloque-contenedor-grid .contenedor-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    grid-template-areas: "img1" "texto1" "img2" "texto2" "img3" "texto3" "img4" "texto4";
+  }
+  .bloque-contenedor-grid .contenedor-grid .grid-texto-1, .bloque-contenedor-grid .contenedor-grid .grid-texto-2, .bloque-contenedor-grid .contenedor-grid .grid-texto-3, .bloque-contenedor-grid .contenedor-grid .grid-texto-4 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    line-height: 35px;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .kdramas-titulo {
+    font-size: 32px;
+  }
+  .top p {
+    font-size: 17px;
+    line-height: 35px;
+  }
+  .top-dramas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 28px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .top img {
+    width: 300px;
+  }
+  .ost-titulo h1 {
+    font-size: 32px;
+  }
+  .ost-titulo p {
+    line-height: 35px;
+    font-size: 17px;
+  }
+  .bloque-ost {
+    display: flex;
+    flex-direction: column;
+  }
+  .bloque-ost p {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .grid-videos iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .peliculas-titulo h2 {
+    margin: 10px;
+  }
+  .peliculas-titulo p {
+    line-height: 35px;
+    font-size: 17px;
+  }
+  .lista-peliculas ul {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    gap: 50px;
+  }
+  .info-peliculas {
+    padding: 15px;
+  }
+  .info-peliculas p {
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 35px !important;
+  }
+  .formulario {
+    width: 90%;
+  }
+  .contacto-titulo p {
+    line-height: 30px;
+  }
+  .grupo-input {
+    flex-direction: column;
+  }
+  #carouselExampleAutoplaying {
+    width: 90%;
+  }
+  .parrafo {
+    line-height: 38px;
+    font-size: 18px;
+  }
+  .parrafo p {
+    line-height: 38px !important;
+    font-size: 17px !important;
+  }
+}/*# sourceMappingURL=estilos.css.map */

@@ -3,12 +3,6 @@
 .kdramas-titulo {
     margin: 20px 20px 30px 20px;
 }
-.categorias h3 {
-    text-decoration-line: underline;
-    text-decoration-color: $lila;
-    font-weight: bold;
-    color: $violeta;
-}
 /* Acordeón  */
 
 .accordion-item {
@@ -36,6 +30,10 @@
     }
     h3 {
         padding-bottom: 10px;
+        text-decoration-line: underline;
+        text-decoration-color: $lila;
+        font-weight: bold;
+        color: $violeta;
     }
 }
 .top {
